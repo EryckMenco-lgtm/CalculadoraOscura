@@ -24,13 +24,13 @@ main {
   border-radius: 18px;
   position: relative;
   background-color: #ffffff;
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.737);
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.737);
 }
 
 .oscuro main {
   background-color: #0b0b0b;
   color: #f5f5f5;
-  box-shadow: 15px 25px 35px rgba(255, 255, 255, 0.474);
+  box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.634);
 }
 
 #btn-tema {
@@ -77,6 +77,11 @@ input {
   color: #111827;
 }
 
+input:focus {
+  border: 2px dotted rgb(230, 230, 230);
+  box-shadow: 0 0 12px 0 #74ebd5;
+}
+
 .oscuro input {
   background-color: #1f2933;
   color: #ffffff;
@@ -100,9 +105,9 @@ p {
 
 .calculadores {
     /* background-color: #e5e7eb; */
+  box-sizing: border-box;
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-top: 10px;
 }
@@ -131,6 +136,14 @@ p {
 .oscuro  .calculadores button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.392);
+}
+
+.Mos_Resultado {
+  margin: 15px 10px;
+  border-radius: 20px;
+  border-color: antiquewhite;
+  border-style: groove;
+  background-color: #2c5364;
 }
  @media (max-width: 420px) {
   main {

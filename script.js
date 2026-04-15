@@ -35,7 +35,7 @@ function multi() {
     const valor1 = parseInt(inputNumero1.value)
     const valor2 = parseInt(inputNumero2.value)
 
-    parrafoResultado.innerText = valor1 + valor2
+    parrafoResultado.innerText = valor1 * valor2
 };
 btnMult.addEventListener("click", multi);
 
@@ -48,9 +48,9 @@ function div() {
         alert("No se puede dividir por 0")
 return;
 }
-
-    parrafoResultado.innerText = valor1 / valor2
+parrafoResultado.innerText = valor1 / valor2
 };
+
 btnDiv.addEventListener("click", div);
 
 function noDatos() {
